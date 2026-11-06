@@ -41,3 +41,11 @@ datheon-internship/
        Features: Product storefront dynamically fetching inventory from FakeStoreAPI, instant category filtering, real-time client-side search, interactive cart state math, and slide-out cart drawer.
 
        Tech: REST APIs (FakeStoreAPI), JavaScript Array Methods, CSS Transitions, Dynamic DOM Rendering.
+
+
+📬 Contact & Links
+GitHub: @avarnikakc-design
+
+Internship Program: Datheon Full Stack Web Development
+
+© 2026 Avarnika K C. All rights reserved.
