@@ -1,5 +1,5 @@
 # 🚀 Datheon Full Stack Web Development Internship
-
+**Internship Track:** Full Stack Web Development
 **Internship ID:** DT-2026-UPUMK  
 **Developer:** Avarnika K C  
 **Tech Stack:** HTML5, CSS3, JavaScript (ES6+), REST APIs, localStorage, Git/GitHub  
@@ -20,6 +20,8 @@ datheon-internship/
 ├── task-2-task-manager/     # Task 2: Everyday Task & Status Tracker
 ├── task-3-weather-app/      # Task 3: SkyPulse Weather Telemetry App
 └── task-4-ecommerce/        # Task 4: LuxeCart E-Commerce Storefront
+
+---
 
 🛠️ Task Modules & Feature Highlights
 🔹 Task 1: Master Developer Portfolio (task-1-portfolio)
