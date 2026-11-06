@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="manager-container">
+        <!-- Header & Stats Summary -->
+        <header>
+            <h1><i class="fa-solid fa-calendar-check"></i> My Daily Task Manager</h1>
+            <div class="stats-cards">
+                <div class="stat-card pending">
+                    <span id="count-pending">0</span>
+                    <p>Pending</p>
+                </div>
+                <div class="stat-card ongoing">
+                    <span id="count-ongoing">0</span>
+                    <p>Ongoing</p>
+                </div>
+                <div class="stat-card completed">
+                    <span id="count-completed">0</span>
+                    <p>Completed</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Task Creation Form -->
+        <form id="task-form" class="task-form">
+            <div class="form-row">
+                <input type="text" id="task-title" placeholder="Enter task description..." required>
+                <select id="task-status">
+                    <option value="Pending">Pending</option>
+                    <option value="Ongoing">Ongoing</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="date-group">
+                    <label>Start Date:</label>
+                    <input type="date" id="start-date" required>
+                </div>
+                <div class="date-group">
+                    <label>End Date:</label>
+                    <input type="date" id="end-date" required>
+                </div>
+                <button type="submit" id="add-btn"><i class="fa-solid fa-plus"></i> Add Task</button>
+            </div>
+        </form>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="Pending">Pending</button>
+            <button class="filter-btn" data-filter="Ongoing">Ongoing</button>
+            <button class="filter-btn" data-filter="Completed">Completed</button>
+        </div>
+
+        <!-- Task List Table / Container -->
+        <div class="task-list-wrapper">
+            <ul id="task-list">
+                <!-- Dynamically populated via JS -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

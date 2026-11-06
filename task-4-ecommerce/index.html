@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeCart E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">🛍️ LuxeCart</div>
+        <div class="nav-search">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+        <button id="cart-toggle-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Category Filters -->
+        <div class="category-filters">
+            <button class="cat-btn active" data-category="all">All</button>
+            <button class="cat-btn" data-category="electronics">Electronics</button>
+            <button class="cat-btn" data-category="jewelery">Jewelry</button>
+            <button class="cat-btn" data-category="men's clothing">Men's Clothing</button>
+            <button class="cat-btn" data-category="women's clothing">Women's Clothing</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-grid" class="product-grid">
+            <!-- Populated via JS -->
+        </div>
+    </main>
+
+    <!-- Slide-out Cart Drawer -->
+    <div id="cart-overlay" class="cart-overlay hidden"></div>
+    <aside id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Shopping Cart</h2>
+            <button id="close-cart-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items populated via JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="subtotal-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+            <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
